@@ -13,6 +13,6 @@ This will take an infix expression as an argument, and return the corresponding 
 Second Function:double evaluatePostfix(string exp)
 This will take a postfix expression of the form generated in part 1, and evaluate it as a double value.
 Third Function: string postfixtoPrefix(string exp)
-Creates stacks S, of strings and scans the postfix expression from left to right(skips over whitespace). If the character is an operand, it pushes the char, if it's an operator, more stuff happens.
+Creates stacks S, of strings and scans the postfix expression from left to right(skips over whitespace). If the character is an operand, it pushes the char on top of the stack. If it's an operator, it pops the top of the stack twice into two separate characters (x and y). After popping twice, the stack is pushed with the concatenation of the operatore and the two separate characters. 
 
 
