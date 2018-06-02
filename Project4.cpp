@@ -1,3 +1,13 @@
+/** @file */ 
+
+//! Project 4 CPP File.*/ 
+/*!
+  This is main file for the project 4. This project implements the algorithms
+  to implement the infix to Postfix and postfix to prefix conversion functionality.
+  Furthermore, this file also implements the function to evaluate the postfix
+  expression. In the main function several testcases were performed to test the 
+  desired functionality.
+*/
 #include<iostream>
 #include<stack>
 #include<string>
@@ -10,6 +20,12 @@ string infixToPostfix(string exp);
 double evaluatePostfix(string exp);
 string postfixToPrefix(string exp);
 
+//! Main function, to define variables and define test cases.*/
+/*!
+  This is the main function, it reads the expression from a text file in infix format.
+  The it converts the expression into postfix and prefix formats and prints them on the
+  output screen.   
+*/
 int main()
 
 {
@@ -28,8 +44,13 @@ int main()
 	return 0;
 }
 
-
-
+//! infixToPostfix function is used to convert an infix stream into postfix
+/*!
+  This function converts the expression from infix format to the postfix format
+  \param exp string type variable which contains the expression in infix format
+  \return a string containing the expression in postfix format
+  \sa stack
+*/
 string infixToPostfix(string exp)
 {
 	
@@ -74,7 +95,13 @@ string infixToPostfix(string exp)
 }
 
 
-
+//! postfixToPrefix function is used to convert a postfix stream into prefix stream
+/*!
+  This function converts the expression from postfix format to the prefix format
+  \param exp string type variable which contains the expression in postfix format
+  \return a string containing the expression in prefix format
+  \sa stack
+  */
 string postfixToPrefix(string exp)
 {
 	stack<string> S;
@@ -97,8 +124,14 @@ string postfixToPrefix(string exp)
 	return S.top();
 }
 
-
-
+//! evaluatePostfix function is used to evaluate the expression and return the
+//! result in double format
+/*!
+  This function evaluates the expression given in postfix format
+  \param PostStr string type variable which contains the expression in postfix format
+  \return a double variable containing the result of the expression
+  \sa stack
+  */
 double evaluatePostfix(string PostStr) 
 {
 	stack<double> s;
