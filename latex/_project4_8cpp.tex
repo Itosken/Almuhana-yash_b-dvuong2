@@ -1,0 +1,93 @@
+\hypertarget{_project4_8cpp}{}\section{Project4.\+cpp File Reference}
+\label{_project4_8cpp}\index{Project4.\+cpp@{Project4.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{_project4_8cpp_af0507e1a6f4bf597b1526adb234f3e25}{infix\+To\+Postfix}} (string exp)
+\begin{DoxyCompactList}\small\item\em infix\+To\+Postfix function is used to convert an infix stream into postfix \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{_project4_8cpp_a6c2bb4f5dffe3792e9522ddc4ed07a7d}{evaluate\+Postfix}} (string exp)
+\item 
+string \mbox{\hyperlink{_project4_8cpp_a7e8d5706802d94fc5f8325c1ad71b4ff}{postfix\+To\+Prefix}} (string exp)
+\begin{DoxyCompactList}\small\item\em postfix\+To\+Prefix function is used to convert a postfix stream into prefix stream \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_project4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function, to define variables and define test cases.$\ast$/. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_project4_8cpp_a6c2bb4f5dffe3792e9522ddc4ed07a7d}\label{_project4_8cpp_a6c2bb4f5dffe3792e9522ddc4ed07a7d}} 
+\index{Project4.\+cpp@{Project4.\+cpp}!evaluate\+Postfix@{evaluate\+Postfix}}
+\index{evaluate\+Postfix@{evaluate\+Postfix}!Project4.\+cpp@{Project4.\+cpp}}
+\subsubsection{\texorpdfstring{evaluate\+Postfix()}{evaluatePostfix()}}
+{\footnotesize\ttfamily double evaluate\+Postfix (\begin{DoxyParamCaption}\item[{string}]{Post\+Str }\end{DoxyParamCaption})}
+
+evaluate\+Postfix function is used to evaluate the expression and return the result in double format ~\newline
+
+
+This function evaluates the expression given in postfix format 
+\begin{DoxyParams}{Parameters}
+{\em Post\+Str} & string type variable which contains the expression in postfix format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double variable containing the result of the expression 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+stack 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_project4_8cpp_af0507e1a6f4bf597b1526adb234f3e25}\label{_project4_8cpp_af0507e1a6f4bf597b1526adb234f3e25}} 
+\index{Project4.\+cpp@{Project4.\+cpp}!infix\+To\+Postfix@{infix\+To\+Postfix}}
+\index{infix\+To\+Postfix@{infix\+To\+Postfix}!Project4.\+cpp@{Project4.\+cpp}}
+\subsubsection{\texorpdfstring{infix\+To\+Postfix()}{infixToPostfix()}}
+{\footnotesize\ttfamily string infix\+To\+Postfix (\begin{DoxyParamCaption}\item[{string}]{exp }\end{DoxyParamCaption})}
+
+
+
+infix\+To\+Postfix function is used to convert an infix stream into postfix 
+
+This function converts the expression from infix format to the postfix format 
+\begin{DoxyParams}{Parameters}
+{\em exp} & string type variable which contains the expression in infix format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string containing the expression in postfix format 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+stack 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_project4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_project4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Project4.\+cpp@{Project4.\+cpp}!main@{main}}
+\index{main@{main}!Project4.\+cpp@{Project4.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function, to define variables and define test cases.$\ast$/. 
+
+This is the main function, it reads the expression from a text file in infix format. The it converts the expression into postfix and prefix formats and prints them on the output screen. \mbox{\Hypertarget{_project4_8cpp_a7e8d5706802d94fc5f8325c1ad71b4ff}\label{_project4_8cpp_a7e8d5706802d94fc5f8325c1ad71b4ff}} 
+\index{Project4.\+cpp@{Project4.\+cpp}!postfix\+To\+Prefix@{postfix\+To\+Prefix}}
+\index{postfix\+To\+Prefix@{postfix\+To\+Prefix}!Project4.\+cpp@{Project4.\+cpp}}
+\subsubsection{\texorpdfstring{postfix\+To\+Prefix()}{postfixToPrefix()}}
+{\footnotesize\ttfamily string postfix\+To\+Prefix (\begin{DoxyParamCaption}\item[{string}]{exp }\end{DoxyParamCaption})}
+
+
+
+postfix\+To\+Prefix function is used to convert a postfix stream into prefix stream 
+
+This function converts the expression from postfix format to the prefix format 
+\begin{DoxyParams}{Parameters}
+{\em exp} & string type variable which contains the expression in postfix format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string containing the expression in prefix format 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+stack 
+\end{DoxySeeAlso}
